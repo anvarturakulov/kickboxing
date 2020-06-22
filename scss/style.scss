@@ -2,10 +2,71 @@
 @import 'vars';
 @import 'fonts';
 
+.header__inner{
+    @include ibg;
+    max-width: 1920;
+    height: 1088px;
+}
 
+.header__text{
+    text-align: center;
+    padding: 265px 0px 310px 0px;
+    &-top{
+        font-size: 150px;
+        font-family: "Yanone Kaffeesatz";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    &-middle{
+        @include ibg;
+        width: 1305px;
+        height: 225px;
+        margin: 0 auto;
+    }
+    &-bottom{
+        font-size: 62.5px;
+        font-family: "Yanone Kaffeesatz";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-top: 55px;
+    }
+}
 
+.gloves__img{
+    @include ibg;
+    width: 501px;
+    height: 398px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
 
+.gloves__text-top{
+        font-size: 83.333px;
+        font-family: "Yanone Kaffeesatz";
+        color: rgb(228, 183, 131);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+}
 
+.gloves__text-middle{
+    font-size: 125px;
+    font-family: "Yanone Kaffeesatz";
+    color: rgb(188, 17, 52);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.gloves__stars{
+    width: 457px;
+    height: 135px;
+    @include ibg;
+    margin: 0 auto;
+    margin-top: 50px;
+}
 
 @import 'media';
 //end present box
