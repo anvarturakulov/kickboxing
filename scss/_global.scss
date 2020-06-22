@@ -1,0 +1,36 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    // font-weight: 300;
+    // font-size: 18px;
+    // line-height: 24px;
+}
+
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container__fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
