@@ -13,7 +13,6 @@
     padding: 265px 0px 310px 0px;
     &-top{
         font-size: 150px;
-        font-family: "Yanone Kaffeesatz";
         color: rgb(255, 255, 255);
         font-weight: bold;
         line-height: 1.2;
@@ -26,7 +25,6 @@
     }
     &-bottom{
         font-size: 62.5px;
-        font-family: "Yanone Kaffeesatz";
         color: rgb(255, 255, 255);
         font-weight: bold;
         line-height: 1.2;
@@ -44,7 +42,6 @@
 
 .gloves__text-top{
         font-size: 83.333px;
-        font-family: "Yanone Kaffeesatz";
         color: rgb(228, 183, 131);
         font-weight: bold;
         line-height: 1.2;
@@ -53,7 +50,6 @@
 
 .gloves__text-middle{
     font-size: 125px;
-    font-family: "Yanone Kaffeesatz";
     color: rgb(188, 17, 52);
     font-weight: bold;
     line-height: 1.2;
@@ -93,7 +89,6 @@
 
 .content__info-title{
     font-size: 32px;
-    font-family: "Yanone Kaffeesatz";
     color: rgb(188, 17, 52);
     font-weight: bold;
     line-height: 1.2;
@@ -101,7 +96,6 @@
 
 .content__info-text{
     font-size: 25px;
-    font-family: "Yanone Kaffeesatz";
     color: rgb(0, 0, 0);
     line-height: 1.2;
     max-width: 600px;
@@ -119,16 +113,19 @@
     @include ibg;
     width: 1557px;
     height: 915px;
+    
+ 
+}
+
+.schedule__link{
+    text-align: center;
     a{
-        
         text-decoration: none;
         max-width: 490px;
         height: 50px;
         background-color: rgb(188, 17, 52);    
         border-radius: 10px;
-        text-align: center;
         font-size: 41.667px;
-        font-family: "Yanone Kaffeesatz";
         color: rgb(244, 246, 250);
         font-weight: bold;
         line-height: 1.2;
@@ -153,7 +150,6 @@
 }
 .schedule__title{
     font-size: 125px;
-    font-family: "Yanone Kaffeesatz";
     color: rgb(244, 246, 250);
     font-weight: bold;
     line-height: 1.2;
@@ -168,9 +164,12 @@
 .schedule__item{
     max-width: 700px;
 }
+
+.schedule{
+    margin-top: 200px;
+}
 .title__text{
     font-size: 52px;
-    font-family: "Yanone Kaffeesatz";
     color: rgb(188, 17, 52);
     font-weight: bold;
     line-height: 1.2;
@@ -178,7 +177,6 @@
 }
 .title__price{
     font-size: 42px;
-    font-family: "Yanone Kaffeesatz";
     color: rgb(3, 41, 102);
     font-weight: bold;
     line-height: 1.2;
@@ -192,11 +190,8 @@
 
 .schedule__item-text{
     font-size: 34px;
-    font-family: "Yanone Kaffeesatz";
     color: rgb(0, 0, 0);
     line-height: 1.2;
-
-    
 }
 
 .poloska{
@@ -205,8 +200,67 @@
     background-color: #fff;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.trainer__imgbox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.trainer__box-polosa{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    @include ibg;
+    width: 1330px;
+    height: 294px;
+    padding-top: 30px;
 
 }
+
+.trainer__name{
+    &-man{
+        margin-right: 100px;
+    }    
+
+    &-woman{
+        margin-left: 100px;
+    }    
+
+    &-top{
+        color: rgb(188, 17, 52);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        font-size: 73px;
+    }
+    &-middle{
+        color: rgb(188, 17, 52);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        font-size: 125px;
+    }
+    &-bottom{
+        color: rgb(188, 17, 52);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        font-size: 52px;
+        color: rgb(3, 41, 102);
+    }
+}
+
+.oval_top{
+    display: none;
+}
+
+.trainer__mob{
+    display: none;  
+}
+
 @import 'media';
 //end present box
 
